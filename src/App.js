@@ -10,6 +10,7 @@ import Signup from './pages/signup'
 import Document from './pages/send_document';
 import GetDocument from './pages/get_document';
 import ListDocument from './pages/list_document';
+import Profile from './pages/profile';
 
 axios.defaults.withCredentials = false
 
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="login" element={<Login />} />
+          <Route path="profile" element={<Profile />} />
           <Route path="signup" element={<Signup />} />
           <Route path="document" element={<Document />} />
           <Route path="get-document" element={<GetDocument />} />

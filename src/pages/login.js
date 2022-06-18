@@ -11,19 +11,25 @@ import {
     Typography} from '@mui/material';
   
 import {Visibility, VisibilityOff} from '@mui/icons-material';
-import axios from 'axios'
+
 import { useState } from 'react';
 import { Box } from '@mui/system';
+import * as User from "../api/user"
+import { Navigate, useNavigate } from 'react-router-dom';
 
 export default function Login(){
-    const [password, setPassword] = useState({
+      const [password, setPassword] = useState({
         showPassword: false,
         value: ''
       })
-      const [result, setResult] = useState({})
-    
-      function doLogin(){
-        console.log('chamar api/user.js')
+      const [email, setEmail] = useState("")
+      let navigate = useNavigate()
+
+      async function doLogin(){
+        const data = await User.login(email, password.value)
+        if(data.access){
+          navigate("/profile")
+        }
       }
     
       function getChain(){
@@ -44,6 +50,8 @@ export default function Login(){
               id="login"
               type='text'
               label="Usuário"
+              value={email}
+              onChange={(e)=>{setEmail(e.target.value)}}
             />
           </FormControl>
 
