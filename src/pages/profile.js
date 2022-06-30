@@ -1,8 +1,10 @@
 import { Button } from "@mui/material"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
+import NavBar from "../components/navbar"
 
 export default function Profile(){
+
     let data = localStorage.getItem("credentials")
     const [user, setUser] = useState({})
     data = JSON.parse(data?data:"{}")
@@ -16,10 +18,14 @@ export default function Profile(){
     }, [])
    
     return (
+        <>
         <div>
+            <NavBar />
             <h2>Usuario: {user.username}</h2>
             <Button variant="outlined"  onClick={()=>{navigate("/list-document")}}>Meus Certificados</Button>
             <Button variant="contained" color="secondary" onClick={()=>{localStorage.setItem("credentials", "{}")}} >Sair</Button>
+
         </div>
+        </>
     )
 }

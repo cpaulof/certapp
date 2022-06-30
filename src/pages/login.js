@@ -15,13 +15,18 @@ import {Visibility, VisibilityOff} from '@mui/icons-material';
 import { useState } from 'react';
 import { Box } from '@mui/system';
 import * as User from "../api/user"
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Login(){
       const [password, setPassword] = useState({
         showPassword: false,
         value: ''
       })
+
+      useEffect(()=>{
+        document.title = "Login"
+      }, [])
       const [email, setEmail] = useState("")
       let navigate = useNavigate()
 
@@ -77,6 +82,7 @@ export default function Login(){
           </FormControl>
 
           <Button  onClick={doLogin} variant="contained">Enviar</Button>
+          <Link to="/profile" >Criar conta</Link>
         </Stack>
       )
 }

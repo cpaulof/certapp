@@ -1,4 +1,5 @@
-import { Divider, List, ListItemButton, ListItemText } from "@mui/material"
+import { Image } from "@mui/icons-material"
+import { Avatar, Divider, List, ListItemAvatar, ListItemButton, ListItemIcon, ListItemText, Typography } from "@mui/material"
 import { Box } from "@mui/system"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
@@ -149,18 +150,23 @@ export default function ListDocument(){
 
     return (
         <>
-        <List sx={{
+        <List  sx={{
         width: '100%',
-        maxWidth: 360,
-        bgcolor: '#CCC',
-        position: 'relative',
+        maxWidth: {xs:"90%", sm: "90%", md:"80%", lg:"60%"},
+        bgcolor: "#AAA",
+        borderRadius:".5em",
         overflow: 'auto',
-        maxHeight: 400
-      }} component="nav" aria-label="secondary mailbox folder">
+      }}  component="nav" aria-label="secondary">
             {certificados.map((c)=>{
                 return (<div key={c.previous_hash}>
                     <ListItemButton  onClick={()=>{navigate("/get-document", {state:{e:c}})}}>
-                        <ListItemText primary={c.name} secondary={c.data}/>
+                        <ListItemIcon>
+                            <Image  src="https://img.ibxk.com.br/2012/6/programas/35335.jpg" />
+                        </ListItemIcon>
+                        <ListItemText primary={<Typography variant="h4" >{c.name}</Typography>} secondary={<>
+                            <Typography variant="h5" >Adas SDdd</Typography>
+                            <Typography variant="body">{c.data}</Typography>
+                        </>}></ListItemText>
                     </ListItemButton>
                     <Divider  /></div>)
             })} 
