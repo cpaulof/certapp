@@ -13,6 +13,7 @@ import ListDocument from './pages/list_document';
 import Profile from './pages/profile';
 import NavBar from './components/navbar';
 import { createTheme, ThemeProvider } from '@mui/material';
+import { useEffect } from 'react';
 
 const theme =  createTheme({
   breakpoints:{
@@ -40,6 +41,17 @@ const theme =  createTheme({
 axios.defaults.withCredentials = false
 
 function App() {
+  useEffect(()=>{
+    localStorage.setItem("credentials", 
+    JSON.stringify({
+      "refresh":"ThlYalk",
+      "access":"MIUE",
+      "user":
+        {"id":4,
+        "username":"userrer",
+        "email":"abc@abc.com",
+        "is_active":true}}))
+  }, [])
   return (
     <ThemeProvider theme={theme} >
     <NavBar />
