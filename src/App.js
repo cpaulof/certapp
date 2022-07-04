@@ -27,10 +27,14 @@ const theme =  createTheme({
     secondary: {
       main: '#d84578',
     },
+    /** update  
+     * 
     background: {
       default: '#c3c3c3',
       paper: '#f1eded',
-    },
+    }, 
+    fim-update*/
+  
     text: {
       primary: 'rgba(41,41,41,0.87)',
       secondary: 'rgba(84,83,83,0.7)',

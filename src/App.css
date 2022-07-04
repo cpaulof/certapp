@@ -1,7 +1,86 @@
+/*update*/
+
+*{
+  margin: 0;
+}
+div, section{
+  display: block;
+}
+
+.App{
+  background: var(--clr-grey-10);
+  padding: 6rem 0;
+}
+
+:root {
+  --clr-primary: #2680c0;
+  --clr-primary-dark: #003e6b;
+  --clr-primary-light: #85c6f4;
+  --clr-primary-1: #003e6b;
+  --clr-primary-2: #0a558a;
+  --clr-primary-3: #0f6099;
+  --clr-primary-4: #1870af;
+  --clr-primary-5: #2680c0;
+  --clr-primary-6: #4299d7;
+  --clr-primary-7: #64b1e8;
+  --clr-primary-8: #85c6f4;
+  --clr-primary-9: #b4dffe;
+  --clr-primary-10: #daedfb;
+  --clr-grey-1: #102a42;
+  --clr-grey-3: #324d67;
+  --clr-grey-4: #48647f;
+  --clr-grey-5: #617d98;
+  --clr-grey-8: #bcccdc;
+  --clr-grey-9: #dae2ec;
+  --clr-grey-10: #f1f5f8;
+  --clr-white: #fff;
+  --clr-black: #0a0c10;
+  --clr-red-dark: #bb2525;
+  --clr-red-light: #e66b6b;
+  --ff-primary: "Roboto",sans-serif;
+  --ff-secondary: "Open Sans",sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.15rem;
+  --radius: 0.375rem;
+  --fixed-width: 620px;
+}
+
+.MuiList-root.MuiList-padding.css-h4y409-MuiList-root{
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto 2rem;
+  display: grid;
+  grid-gap: 3rem 1.5rem;
+  gap: 3rem 1.5rem;
+  grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+  --radius: 0.375rem;
+}
+
+.MuiListItemButton-root.MuiListItemButton-gutters.MuiButtonBase-root.css-1kl85us-MuiButtonBase-root-MuiListItemButton-root{
+  height: 100%;
+}
+
+
+.css-1sra7t5-MuiTypography-root {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 100;
+  font-size: 4.75rem;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+}
+
+.MuiFormControl-root.css-r47a1p-MuiFormControl-root{
+  width: 38ch;
+}
+
+/*fim-update*/
+
+
+
 .App {
   text-align: center;
-  background-color: rgb(226, 222, 216);
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;

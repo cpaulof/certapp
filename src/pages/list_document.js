@@ -151,11 +151,14 @@ export default function ListDocument(){
     return (
         <>
         <List  sx={{
+        /* update
         width: '100%',
         maxWidth: {xs:"90%", sm: "90%", md:"80%", lg:"60%"},
         bgcolor: "#AAA",
         borderRadius:".5em",
         overflow: 'auto',
+        */
+        
       }}  component="nav" aria-label="secondary">
             {certificados.map((c)=>{
                 return (<div key={c.previous_hash}>
