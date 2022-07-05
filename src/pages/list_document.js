@@ -11,7 +11,7 @@ export default function ListDocument(){
     const [certificados, setCertificados] = useState([])
     let navigate = useNavigate()
     useEffect(()=>{
-        setCertificados([
+        setCertificados([  
             {
                 previous_hash: "1CE651A6E16AEB1AE64AB11E6AE9ABEEA132F1E65789BE41FB654A",
                 name: "Palestra X (2022)",
@@ -162,7 +162,7 @@ export default function ListDocument(){
         */
         
       }}  component="nav" aria-label="secondary">
-            {certificados.map((c)=>{
+        {certificados.map((c)=>{
                 return (<div key={c.previous_hash}>
                     <ListItemButton  onClick={()=>{navigate("/get-document", {state:{e:c}})}}>
                         <ListItemIcon>

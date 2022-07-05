@@ -111,9 +111,29 @@ img#certificado{
   top: 10%;
 }
 
+img#empresa {
+  padding-bottom: 40px;
+  width: 20%;
+}
+
+.MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.css-2s90m6-MuiAvatar-root{
+  background-color: #64b1e8
+}
+
+.MuiTypography-root.MuiTypography-h2.css-1sra7t5-MuiTypography-root {
+  text-align: center;
+  font-size: 30px;
+  padding: 1%;
+}
+
+.h2.MuiTypography-root.MuiTypography-h2.css-1sra7t5-MuiTypography-root{
+  text-align: center;
+  font-size: 30px;
+  padding: 1%;
+  font-family: ui-monospace;
+}
+
 /*fim-update*/
-
-
 
 .App {
   text-align: center;
