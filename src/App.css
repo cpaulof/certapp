@@ -58,8 +58,28 @@ div, section{
 
 .MuiListItemButton-root.MuiListItemButton-gutters.MuiButtonBase-root.css-1kl85us-MuiButtonBase-root-MuiListItemButton-root{
   height: 100%;
+
 }
 
+h4.MuiTypography-root.MuiTypography-h4.css-5lbw0b-MuiTypography-root{
+  font-size: 34px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding-left: 40px;
+}
+h5.MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root{
+  font-size: 18px;
+  font-weight: bolder;
+
+}
+
+.css-konndc-MuiListItemText-root, .MuiTypography-root.MuiTypography-h4.css-5lbw0b-MuiTypography-root{
+  text-align: center;
+}
+
+MuiListItemText-root.MuiListItemText-multiline.css-konndc-MuiListItemText-root{
+  padding-left: 10%;
+}
 
 .css-1sra7t5-MuiTypography-root {
   margin: 0;
@@ -69,9 +89,26 @@ div, section{
   line-height: 1.2;
   letter-spacing: -0.00833em;
 }
-
+.css-5lbw0b-MuiTypography-root{
+    font-weight: 300;
+    font-size: 1.75rem;
+}
 .MuiFormControl-root.css-r47a1p-MuiFormControl-root{
   width: 38ch;
+}
+.css-1kl85us-MuiButtonBase-root-MuiListItemButton-root{
+  text-align: center;
+}
+img{
+  height: 50%;
+  width: 30%;
+  text-align: center;
+}
+
+img#certificado{
+  position: absolute;
+  width: auto;
+  top: 10%;
 }
 
 /*fim-update*/

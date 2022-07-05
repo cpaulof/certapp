@@ -2,6 +2,7 @@ import { Button } from "@mui/material"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import NavBar from "../components/navbar"
+import user_img from "../img/user.png";
 
 export default function Profile(){
 
@@ -21,6 +22,7 @@ export default function Profile(){
         <>
         <div>
             <NavBar />
+            <img src={user_img} alt="logo"/>
             <h2>Usuario: {user.username}</h2>
             <Button variant="outlined"  onClick={()=>{navigate("/list-document")}}>Meus Certificados</Button>
             <Button variant="contained" color="secondary" onClick={()=>{localStorage.setItem("credentials", "{}")}} >Sair</Button>

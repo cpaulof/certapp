@@ -3,6 +3,8 @@ import { Avatar, Divider, List, ListItemAvatar, ListItemButton, ListItemIcon, Li
 import { Box } from "@mui/system"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
+//import sebrae_img from "../img/sebrae_img.png";
+import certificado from "../img/certificado2-logo.png";
 
 // lista os documentos de determinado usuario
 export default function ListDocument(){
@@ -164,10 +166,10 @@ export default function ListDocument(){
                 return (<div key={c.previous_hash}>
                     <ListItemButton  onClick={()=>{navigate("/get-document", {state:{e:c}})}}>
                         <ListItemIcon>
-                            <Image  src="https://img.ibxk.com.br/2012/6/programas/35335.jpg" />
+                        <img src={certificado} alt="logo" id = "certificado"/>  
                         </ListItemIcon>
                         <ListItemText primary={<Typography variant="h4" >{c.name}</Typography>} secondary={<>
-                            <Typography variant="h5" >Adas SDdd</Typography>
+                            <Typography variant="h5" >Usuário</Typography>
                             <Typography variant="body">{c.data}</Typography>
                         </>}></ListItemText>
                     </ListItemButton>
